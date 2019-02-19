@@ -50,6 +50,12 @@ import android.widget.Toast;
                 startActivity(new Intent(getApplicationContext(), AboutActivity.class));
             }
         });
+        findViewById(R.id.iv_modded).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Modded_Activity.class));
+            }
+        });
 
         botonCambioIdioma = (Button)findViewById(R.id.btn_CambioIdioma);
         botonCambioIdioma.setOnClickListener(new View.OnClickListener() {
