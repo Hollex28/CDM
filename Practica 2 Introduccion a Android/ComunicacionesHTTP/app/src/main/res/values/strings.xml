@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Peticions HTTP</string>
+
+    <string name="hint_about"> About app author</string>
+    <string name="msg_divisaA"> <b>Divisa A</b></string>
+    <string name="msg_divisaB"> <b>Divisa B</b></string>
+    <string name="msg_deAaB"> <b> Convertir\nA &#8594; B</b></string>
+    <string name="msg_deBaA"> <b> Convertir\nB &#8594; A</b></string>
+    <string name="msg_reset"> Borrar Montantes</string>
+
+    <string name="msg_AyudaPeticionesHTTP">
+        Introduce las dos divisas de interés y el montante de aquella que desees convertir.
+        Luego pulsa el botón correspondiente y se realizará la conversión.
+        Los cambios aplicados son los que establece el Banco Central Europeo (obtenidos por HTTP).
+    </string>
+    <string name="activity_name">Conversor de divisas</string>
+
+
+    <string name="cita_titulo">Cita <i>Agitadas</i></string>
+    <string name="cita_ayuda">Agita tu móvil para obtener una nueva cita.</string>
+    <string name="cita_reconocimientos">Usamos los servicios de <a href="http://forismatic.com">forismatic.com</a></string>
+    <string name="menu_agita">Agita</string>
+
+    <!-- MAINACTIVITY STRINGS   -->
+    <string name="tv_titulo">Comunicaciones HTTP</string>
+    <string name="tv_ayuda">Demos que muestran cómo realizar comunicaciones HTTP utilizando la clase HttpUrlConnection o la librería Volley</string>
+    <string name="btn_lanzarCambioDivisasDemo">Cambio de Divisas (HttpUrlConnection)</string>
+    <string name="btn_lanzarCambioDivisasDemo_conWR">Cambio de Divisas\n(HttpUrlConnection y WeakRef)</string>
+    <string name="btn_lanzarPeticionPOST_HTTP">Petición POST\n(HttpUrlConnection)</string>
+    <string name="btn_lanzarPeticionPOST_Volley">Peticiones POST\n(Volley)</string>
+    <string name="btn_lanzarCambioDivisas_Volley">Cambio de Divisas (Volley)</string>
+    <string name="btn_lanzarCitasAgitadas_Volley">Citas Agitadas (Volley)</string>
+
+    <!-- activity_peticiones_demo STRINGS   -->
+    <string name="btn_lanzarPOST_HttpUrlConnection">DEMO POST\n(HttpUrlConnection)</string>
+    <string name="btn_lanzarPOST_Volley_str">DEMO POST\nVolley con StringRequest)</string>
+    <string name="btn_lanzarPOST_Volley_json">DEMO POST\n(Volley con JsonObjectRequest)</string>
+
+    <!-- activity_about STRINGS   -->
+    <string name="str_aboutinfo">
+        "<b>Componentes Avanzados Demo</b> by\n<i>Juan Carlos Ruiz</i>\njcruizg@disca.upv.es\n&#169;2018 DISCA-UPV"
+    </string>
+
+</resources>
