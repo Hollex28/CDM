@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="60.0dip" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textStyle="bold" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Object deserialization" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Object deserialization performed on an untrusted resource (e.g. user-supplied input or external storage), can be dangerous if the data for deserialization is tampered by an attacker." n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:paddingTop="20.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="In order to manually change serialized object do the following: " n1:layout_weight="1.0" />
+            <EditText n1:textSize="12.0sp" n1:gravity="center|left|top" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="adb push SERIALIZED_OBJECT /sdcard" n1:maxLines="10" n1:lines="8" n1:minLines="2" n1:ems="10" n1:editable="false" n1:layout_weight="1.0" n1:inputType="textMultiLine" n1:fontFamily="monospace" />
+            <LinearLayout n1:orientation="vertical" n1:paddingTop="20.0sp" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <TextView n1:textStyle="bold" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="public String proof = " n1:layout_weight="0.3" />
+                    <EditText n1:id="@id/input_serialize" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="input some value" n1:maxLines="1" n1:singleLine="true" n1:layout_weight="0.2" n1:inputType="textUri" n1:imeOptions="actionUnspecified|normal" />
+                </LinearLayout>
+                <Button n1:textStyle="bold" n1:id="@id/button_load_serialize" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="LOAD (deserialize)" style="?android:textAppearanceSmall" />
+                <Button n1:textStyle="bold" n1:id="@id/button_save_serialize" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0sp" n1:text="SAVE (serialize)" style="?android:textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,53 @@
+Practica 4 Lista de Posibles Vulnerabilidades
+
+-Anañlisis Estatico
+
+	- La Aplicacion Tiene el Modo Debug activado por defecto
+
+	-La Aplicacion tiene el modo Backup Activado
+	
+	- La Aplicacion tiene permisio de "Dangerous", puede intentar acceder ha datos sensibles del telefono
+	
+	- La aplicacion tiene 3 elementos exportados, VulnerableService,VulnerableReceiver y VulnerableContentProvider todos 
+	ellos con proteccion de nivel "Dangerous"
+	
+	-Lista de Permisos Usados "Detectados por el Androlyze"
+		-RECORD_AUDIO
+		- INTERNET
+		- READ_CONTACTS //Usado solo por librerias de android
+		-ACCES_FINE_LOCATION//Usado solo por librerias Android
+		
+
+	-Lista de Permisios declarados en el manifest
+
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.READ_PROFILE"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.NFC"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+	-Hay una clara discrepancia entre los permisos declarados en el manifest y los que detecta como usados por Androlyze.
+	
+		-Permisos declarados que no son utilizados
+			
+			- GET_ACCOUNTS
+			-  READ_PROFILE
+			- WRITE_EXTERNAL_STORAGE
+			- READ_EXTERNAL_STORAGE
+			- ACCES_COARSE_LOCATION
+			- NFC
+			- CALL_PHONE
+			- CAMERA
+
+	-Se utiliza Internet en los metodos Configuracion,API y WebViewActivity de los cuales Configuracion no parece tener vulnerabilidades
+	
+	- Se utiliza el Audio_recoder en VulnerableService en los metodos -> startRecording y getOutputFile
+
+

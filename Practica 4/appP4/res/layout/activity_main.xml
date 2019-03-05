@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ProgressBar n1:id="@id/login_progress" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="8.0dip" style="?android:progressBarStyleLarge" />
+    <ScrollView n1:id="@id/login_form" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/email_login_form" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <AutoCompleteTextView n1:id="@id/username" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/prompt_username" n1:maxLines="1" n1:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@id/password" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/prompt_password" n1:maxLines="1" n1:singleLine="true" n1:inputType="textPassword" n1:imeOptions="actionUnspecified|normal" n1:imeActionLabel="@string/action_sign_in_short" n1:imeActionId="6" />
+            </android.support.design.widget.TextInputLayout>
+            <Button n1:textStyle="bold" n1:id="@id/sign_in_button" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="16.0dip" n1:text="@string/action_sign_in" style="?android:textAppearanceSmall" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

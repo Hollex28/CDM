@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:id="@id/action_settings" n1:title="@string/action_settings"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <item n1:id="@id/action_login" n1:title="Login" />
+        <item n1:id="@id/action_encryption" n1:title="Encryption" />
+        <item n1:id="@id/action_webview" n1:title="WebView" />
+        <item n1:id="@id/action_database" n1:title="Database" />
+        <item n1:id="@id/action_load_code" n1:title="Dynamic Load of Code" />
+        <item n1:id="@id/action_service" n1:title="Service" />
+        <item n1:id="@id/action_broadcast_receiver" n1:title="Broadcast Receiver" />
+        <item n1:id="@id/action_serialize" n1:title="Serialize Data" />
+        <item n1:id="@id/action_content_provider" n1:title="Content Provider" />
+        <item n1:id="@id/action_about" n1:title="About project" />
+    </item>
+</menu>

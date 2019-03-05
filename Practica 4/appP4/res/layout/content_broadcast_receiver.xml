@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="60.0dip" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textStyle="bold" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Exported Broadcast Receivers" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="The mobile application contains an exported receiver enabling other applications, including malicious ones, to send intents without restrictions. By default, Broadcast Receivers is exported in Android, as the result any application will be able to send an intent to the Broadcast Receiver of the application. To define which applications can send intents to mobile application’s Broadcast Receiver set relevant permissions in the Android Manifest file." n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:paddingTop="20.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Vulnerable broadcast receiver and sender. Broadcast sender is sending intel about the usage of the application by the user (like log): 'application started', 'admin is connected', 'admin deleted an entry fromthe DB', 'admin user'... The broadcast receiver is writing all these broadcast in LOG.txt file. So any app can see log intel and any app can write text LOG.TXT" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:paddingTop="20.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="In order to send broadcast manually, type following in the console: " n1:layout_weight="1.0" />
+            <EditText n1:textSize="12.0sp" n1:gravity="center|left|top" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="adb shell am broadcast -a service.vulnerable.vulnerableservice.LOG --es data “TEST”" n1:maxLines="10" n1:lines="8" n1:minLines="2" n1:ems="10" n1:editable="false" n1:layout_weight="1.0" n1:inputType="textMultiLine" n1:fontFamily="monospace" />
+            <EditText n1:id="@id/input_broadcast_receiver" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="60.0sp" n1:text="Some text you want to see in file..." n1:inputType="text" />
+            <Button n1:textStyle="bold" n1:id="@id/button_broadcast_receiver" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0sp" n1:text="Send broadcast" />
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="2.0dip" />
+            <WebView n1:id="@id/webview_broadcast_receiver" n1:layout_width="fill_parent" n1:layout_height="300.0sp" />
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="2.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

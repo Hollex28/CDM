@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="60.0dip" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textStyle="bold" n1:id="@id/header_hashing" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Weak hashing algorithms" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="The mobile application uses weak hashing algorithms. Weak hashing algorithms (e.g. MD2, MD4, MD5 or SHA-1) can be vulnerable to collisions and other security weaknesses, and should not be used when reliable hashing of data is required." n1:layout_weight="1.0" />
+            <EditText n1:id="@id/value_hashing" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/value_for_hashing" n1:ems="10" n1:layout_weight="1.0" n1:inputType="text" />
+            <Button n1:id="@id/button_hashing" n1:layout_width="fill_parent" n1:layout_height="45.0dip" n1:text="HASH IT (MD5)" n1:layout_weight="1.0" />
+            <EditText n1:id="@id/hashing_result" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" n1:ems="10" n1:layout_weight="1.0" n1:inputType="text" />
+            <TextView n1:textStyle="bold" n1:id="@id/header_rng" n1:paddingTop="50.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Predictable Random Number Generator" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="The mobile application uses predictable Random Number Generator. Under certain conditions this can jeopardize the entire data encryption performed by the mobile application." n1:layout_weight="1.0" />
+            <Button n1:id="@id/button_rng" n1:layout_width="fill_parent" n1:layout_height="45.0dip" n1:text="Generate" n1:layout_weight="1.0" />
+            <EditText n1:id="@id/rng_result" n1:layout_width="fill_parent" n1:layout_height="46.0dip" n1:ems="10" n1:inputType="textMultiLine" />
+            <TextView n1:textStyle="bold" n1:id="@id/header_encryption" n1:paddingTop="50.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Weak encryption (AES/CBC/PKCS5Padding)" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Weak or badly implemented encryption algorithms can endanger data storage and transmission used by the mobile application." n1:layout_weight="1.0" />
+            <EditText n1:id="@id/plaintext_encryption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Plaintext for encryption" n1:ems="10" n1:layout_weight="1.0" n1:inputType="textPersonName" />
+            <Button n1:id="@id/button_encryption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Encrypt" n1:layout_weight="1.0" />
+            <EditText n1:id="@id/cipher_encryption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Cipher text" n1:ems="10" n1:layout_weight="1.0" n1:inputType="textPersonName" />
+            <TextView n1:textStyle="bold" n1:id="@id/header_decryption" n1:paddingTop="50.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Weak decryption (AES/CBC/PKCS5Padding)" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:id="@id/textView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Weak or badly implemented encryption algorithms can endanger data storage and transmission used by the mobile application." n1:layout_weight="1.0" />
+            <EditText n1:id="@id/cipher_decryption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Cipher text" n1:ems="10" n1:layout_weight="1.0" n1:inputType="textPersonName" />
+            <Button n1:id="@id/button_decryption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Decrypt" n1:layout_weight="1.0" />
+            <EditText n1:id="@id/plaintext_decryption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Plaintext of decryption" n1:ems="10" n1:layout_weight="1.0" n1:inputType="textPersonName" />
+            <TextView n1:textStyle="bold" n1:id="@id/header_weak_iv" n1:paddingTop="50.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Usage of weak Initialization Vector" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="When Cipher Block Chaining (CBC) or Cipher Feedback (CFB) modes are used in encryption, the Initialization Vector must be unpredictable and random." n1:layout_weight="1.0" />
+            <EditText n1:id="@id/plaintext_weak_iv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Plaintext for encryption" n1:ems="10" n1:layout_weight="1.0" n1:inputType="textPersonName" />
+            <EditText n1:enabled="false" n1:id="@id/initialization_vector_weak_iv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="byte[] IV = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }" n1:ems="10" n1:editable="false" n1:layout_weight="1.0" n1:inputType="textPersonName" n1:focusedByDefault="false" />
+            <Button n1:id="@id/button_weak_iv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Encrypt with weak IV" n1:layout_weight="1.0" />
+            <EditText n1:id="@id/cipher_weak_iv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Cipher text" n1:ems="10" n1:layout_weight="1.0" n1:inputType="textPersonName" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

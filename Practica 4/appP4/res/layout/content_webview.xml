@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="60.0dip" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textStyle="bold" n1:id="@id/header_hashing" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="WebView vulnerabilities" n1:layout_weight="1.0" />
+            <TextView n1:textSize="12.0sp" n1:paddingBottom="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Here we present usage of WebView with: JavaScript CORS enabled, JavaScript enabled, Load of remote URL, Use of setPluginState." n1:layout_weight="1.0" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <Button n1:textStyle="bold" n1:id="@id/button_webview_link1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="link 1" n1:layout_weight="0.3" style="?android:textAppearanceSmall" />
+                <Button n1:textStyle="bold" n1:id="@id/button_webview_link2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="link 2" n1:layout_weight="0.3" style="?android:textAppearanceSmall" />
+                <Button n1:textStyle="bold" n1:id="@id/button_webview_link3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="link 3" n1:layout_weight="0.3" style="?android:textAppearanceSmall" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <EditText n1:id="@id/url_webview" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/webview_url_hint" n1:maxLines="1" n1:singleLine="true" n1:layout_weight="0.2" n1:inputType="textUri" n1:imeOptions="actionUnspecified|normal" />
+                <Button n1:textStyle="bold" n1:id="@id/button_webview" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="GO" n1:layout_weight="0.8" style="?android:textAppearanceSmall" />
+            </LinearLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="2.0dip" />
+            <WebView n1:id="@id/webview" n1:layout_width="fill_parent" n1:layout_height="300.0sp" />
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="2.0dip" />
+            <Button n1:textStyle="bold" n1:id="@id/button_xss" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="XSS ME!" style="?android:textAppearanceSmall" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
