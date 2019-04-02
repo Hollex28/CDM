@@ -2,4 +2,6 @@
     <string name="app_name">Zorras Wapas</string>
     <string name="Puta_Alice">Tragavergas Alice: 50€</string>
     <string name="Puta_Selene">Inocent Selene: 500€</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_creditos">Creditos</string>
 </resources>
