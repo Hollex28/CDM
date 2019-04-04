@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView s = findViewById(R.id.tvAdsPutitas);
         s.setText(R.string.Puta_Selene);
-        Log.d( "MainActivity.LogTest", "Ñaca Ñacas");
+        Log.d( "MainActivity.LogTest", "esto es un log");
         findViewById(R.id.IV_info).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

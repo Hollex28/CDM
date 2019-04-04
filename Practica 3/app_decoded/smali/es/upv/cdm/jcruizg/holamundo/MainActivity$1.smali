@@ -46,7 +46,8 @@
     invoke-virtual {p1}, Les/upv/cdm/jcruizg/holamundo/MainActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
-
+	
+	#Cambiar esto por const-class v2, Les/upv/cdm/jcruizg/holamundo/SegundaActividad;
     const-class v2, Les/upv/cdm/jcruizg/holamundo/LoginActivity;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
