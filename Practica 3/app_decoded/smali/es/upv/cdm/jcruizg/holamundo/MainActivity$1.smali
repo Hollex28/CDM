@@ -37,8 +37,15 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
+	
+	 .line 26
+	sget-object p1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
-    .line 26
+
+    .line 27
+    invoke-virtual {p1,v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    move-result p1
+
     iget-object p1, p0, Les/upv/cdm/jcruizg/holamundo/MainActivity$1;->this$0:Les/upv/cdm/jcruizg/holamundo/MainActivity;
 
     new-instance v0, Landroid/content/Intent;
@@ -46,11 +53,20 @@
     invoke-virtual {p1}, Les/upv/cdm/jcruizg/holamundo/MainActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
+
+    if-eqz p1, :cond_hack
 	
-	#Cambiar esto por const-class v2, Les/upv/cdm/jcruizg/holamundo/SegundaActividad;
     const-class v2, Les/upv/cdm/jcruizg/holamundo/LoginActivity;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p1, v0}, Les/upv/cdm/jcruizg/holamundo/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    :cond_hack
+
+    const-class v3, Les/upv/cdm/jcruizg/holamundo/SegundaActividad;
+
+    invoke-direct {v0, v1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     invoke-virtual {p1, v0}, Les/upv/cdm/jcruizg/holamundo/MainActivity;->startActivity(Landroid/content/Intent;)V
 
