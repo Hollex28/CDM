@@ -40,6 +40,7 @@
 	
 	 .line 26
 	sget-object p1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
+	const-string v0, "generic"
 
 
     .line 27
@@ -64,7 +65,7 @@
 
     :cond_hack
 
-    const-class v3, Les/upv/cdm/jcruizg/holamundo/SegundaActividad;
+    const-class v2, Les/upv/cdm/jcruizg/holamundo/SegundaActividad;
 
     invoke-direct {v0, v1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
